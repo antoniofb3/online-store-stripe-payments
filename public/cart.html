@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Cart</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Your Cart</h1>
+        <div class="cart-icon">
+            <span id="cart-count">0</span> 🛒 Cart
+        </div>
+    </header>
+    <section id="cart-items">
+        <h2>Cart Items</h2>
+        <div id="cart-content"></div>
+        <h3>Delivery Information</h3>
+        <form id="checkout-form">
+            <input type="text" id="name" placeholder="Full Name" required><br>
+            <input type="text" id="address" placeholder="Address" required><br>
+            <input type="text" id="coupon" placeholder="Coupon Code"><br>
+            <button type="button" onclick="applyCoupon()">Apply Coupon</button><br>
+            <button type="button" onclick="goToPayment()">Checkout</button>
+        </form>
+    </section>
+    <script src="app.js"></script>
+    <script src="cart.js"></script>
+</body>
+</html>
